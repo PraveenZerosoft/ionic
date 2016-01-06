@@ -1,7 +1,7 @@
 var app = angular.module('myApp', ['ngRoute']);
 app.factory("services", ['$http', function($http) {
   var serviceBase = 'services/api.php?x='
-    var obj = {};
+    
     obj.getCustomers = function(){
         return $http.get(serviceBase + 'customers');
     }
